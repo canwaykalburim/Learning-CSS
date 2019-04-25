@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            header{
+                border-bottom: 1px solid gray;
+                padding-left: 20px;
+            }
+            footer{
+                border-top: 1px solid gray;
+                padding: 20px;
+                text-align: center;
+            }
+            .content{
+                display: flex;
+            }
+            .content nav{
+                border-right: 1px solid gray;
+            }
+            .content aside{
+                border-left: 1px solid gray;
+            }
+            @media(max-width: 500px){
+                .content{
+                    flex-direction: column;
+                }
+                .content nav, .content aside{
+                    border: none;
+                    flex-basis: auto;
+                }
+                main{
+                    order: 0;
+                }
+                nav{
+                    order: 1;
+                }
+                aside{
+                    order: 2;
+                    display: none;
+                }
+            }
+            main{
+                padding: 10px;
+            }
+            nav, aside{
+                flex-basis: 150px;
+                flex-shrink: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>CSS 공부</h1>
+            </header>
+            <section class="content">
+                <nav>
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                    </ul>
+                </nav>
+                <main>
+                    Donec sagittis hendrerit imperdiet. 
+                    Nam pretium convallis nisi vitae consequat. 
+                    Duis id sapien vel eros vulputate faucibus. 
+                    Aenean facilisis libero eget scelerisque luctus. 
+                    Sed vehicula consequat magna. 
+                    Nullam vulputate euismod ante, consectetur aliquet lorem lobortis id. 
+                    Aliquam odio felis, vestibulum ut turpis a, mattis rhoncus ante. 
+                    Donec in sodales felis. 
+                    Sed sollicitudin dolor massa, a tincidunt tellus lacinia eget. 
+                    Nulla facilisis luctus felis, sed mattis magna dignissim tempor. 
+                    Proin a odio tristique, posuere tellus eu, efficitur sapien. 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Aliquam eget risus sed nunc tincidunt mattis pellentesque quis libero.
+                    Nunc non mollis mi, ut feugiat nisi. 
+                    Etiam finibus scelerisque quam et tristique. 
+                    In tempor erat velit, nec venenatis mauris vulputate in.
+                </main>
+                <aside>
+                    AD
+                </aside>
+            </section>
+            <footer>
+                   <a href="https://google.com">홈페이지</a>
+            </footer>
+        </div>        
+    </body>
+</html>
