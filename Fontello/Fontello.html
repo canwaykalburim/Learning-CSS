@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <style>
+        body{
+          background-color: green;
+          font-family: "fontello";
+          font-size: 10rem;
+          text-align: center;
+        }
+        i{
+          color: rgb(255, 115, 0);
+        }
+        #test:before{
+          content: "n";
+          color: red;
+        }
+        #test::after{
+          content: "n";
+          color: blue;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="test">
+        C
+    </div>
+    <i class="icon-firefox animate-spin"></i>
+  </body>
+</html>
